@@ -1,0 +1,13 @@
+html {
+  backround-color: #fff;
+  color: dark-green;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+a {
+  color: red;
+}
