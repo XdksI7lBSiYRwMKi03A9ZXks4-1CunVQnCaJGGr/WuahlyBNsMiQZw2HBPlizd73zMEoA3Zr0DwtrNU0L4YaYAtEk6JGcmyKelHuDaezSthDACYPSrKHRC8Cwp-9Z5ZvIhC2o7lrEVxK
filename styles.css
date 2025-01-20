@@ -1,8 +1,13 @@
 html {
   backround-color: #fff;
   color: dark-green;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
+
+body {
+  margin-top: 50px;
+}
+
 
 h1 {
   font-size: 4em;
@@ -10,4 +15,12 @@ h1 {
 
 a {
   color: red;
+}
+
+.timer {
+  font-size: 2em;
+  color: #ff0000;
+  padding: 5px;   
+  border: 1px solid black;
+  border-radius: 50%;
 }
