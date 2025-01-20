@@ -1,1 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>downloading...</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Download Your APK</h1>
+    <p>Your download will start in <span class="timer" id="countdown">10</span> seconds.</p>
+    <a href="app.apk" id="downloadLink" style="display:none;">Download APK</a>
 
+    <script>
+        let countdown = 10;
+        const countdownElement = document.getElementById('countdown');
+        const downloadLink = document.getElementById('downloadLink');
+
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+
+            if (countdown <= 0) {
+                clearInterval(timer);
+                downloadLink.style.display = 'block';
+                downloadLink.click();
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
